@@ -1,0 +1,30 @@
+import java.io.*; 
+
+public class CompoundInterest {
+
+
+  public static void main(String[] args) {
+  
+    Scanner input = new Scanner(System.in);
+    
+    double result = 0;
+    double principalAmount = 0;
+    double interestRate = 0;
+    double time = 0;
+    
+    
+    System.out.print("Enter the Principal amount : "); 
+    principalAmount = scanner.nextDouble();
+    
+    System.out.print("Enter the Rate : "); 
+    interestRate = scanner.nextDouble();
+ 
+    System.out.print("Enter the Rate : "); 
+    time = scanner.nextDouble();
+    
+    result = principalAmount * Math.pow((1 + rate / 100), time);
+    
+    System.out.println("The Compound Interest is : " + result);
+      
+  }
+}
