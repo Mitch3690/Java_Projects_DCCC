@@ -1,30 +1,50 @@
-import java.io.*; 
+import java.util.Scanner; 
 
 public class CompoundInterest {
+	   public static void main(String[] args)
+	   {  
+	       // declare some variables for needed storage
+	      
+        
+         double principal;	// for user entry
+	       double rate;		// interest rate, user entered
+	       int years;   		// number of years to compound
 
+	       double money;		// final result
 
-  public static void main(String[] args) {
-  
-    Scanner input = new Scanner(System.in);
-    
-    double result = 0;
-    double principalAmount = 0;
-    double interestRate = 0;
-    double time = 0;
-    
-    
-    System.out.print("Enter the Principal amount : "); 
-    principalAmount = scanner.nextDouble();
-    
-    System.out.print("Enter the Rate : "); 
-    interestRate = scanner.nextDouble();
- 
-    System.out.print("Enter the Rate : "); 
-    time = scanner.nextDouble();
-    
-    result = principalAmount * Math.pow((1 + rate / 100), time);
-    
-    System.out.println("The Compound Interest is : " + result);
-      
-  }
-}
+	       Scanner sc = new Scanner(System.in);	// build scanner 
+
+	       // prompt the user and let them enter the needed data
+	       
+	       System.out.print("Please enter the principal amount: ");
+	       principal = sc.nextDouble();
+	       System.out.print("Please enter the annual interest rate: ");
+	       rate = sc.nextDouble();
+	       System.out.print("please enter number of years to compound: ");
+	       years = sc.nextInt();
+
+	       // do the computation of the final money amount
+
+	       money = principal * Math.pow(1 + rate/100.0 , years);
+
+	/*     // You could do the computation in steps, if you like
+	       //  as an alternate to the above -- all in one line
+
+	       double temp = 1 + rate/100.0;
+	       double temp2 = Math.pow( temp , years );
+	       money = principal * temp2;
+	*/
+
+	       // print out the result message
+
+	       System.out.println("The principal amount was " + principal );
+	       System.out.printf("The interest rate was %.2f %%\n", rate);
+	       System.out.println("The number of years to compound was " + years);
+
+	       System.out.println("====================");
+	       System.out.printf(" Now you have this much money: $ %.2f\n", 
+	                                              money);
+
+	   }
+
+	}
