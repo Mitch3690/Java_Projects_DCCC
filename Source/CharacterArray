@@ -1,0 +1,40 @@
+public class CharacterArray {
+
+    public static void main(String[] args) {
+        char[] anArray;
+        anArray = new char[10];
+        
+        anArray[0] = 'a';
+        anArray[1] = 'b';
+        anArray[2] = 'c';
+        anArray[3] = 'd';
+        anArray[4] = 'e';
+        anArray[5] = 'f';
+        anArray[6] = 'g';
+        anArray[7] = 'h';
+        anArray[8] = 'i';
+        anArray[9] = 'j';
+
+        System.out.println("Element at index 0: "
+                           + anArray[0]);
+        System.out.println("Element at index 1: "
+                           + anArray[1]);
+        System.out.println("Element at index 2: "
+                           + anArray[2]);
+        System.out.println("Element at index 3: "
+                           + anArray[3]);
+        System.out.println("Element at index 4: "
+                           + anArray[4]);
+        System.out.println("Element at index 5: "
+                           + anArray[5]);
+        System.out.println("Element at index 6: "
+                           + anArray[6]);
+        System.out.println("Element at index 7: "
+                           + anArray[7]);
+        System.out.println("Element at index 8: "
+                           + anArray[8]);
+        System.out.println("Element at index 9: "
+                           + anArray[9]);
+    }
+
+}
